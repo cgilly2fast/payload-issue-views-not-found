@@ -19,6 +19,14 @@ export default buildConfig({
     importMap: {
       baseDir: path.resolve(dirname),
     },
+    components: {
+      views: {
+        kanban: {
+          Component: '@/views/Kanban/index',
+          path: 'kanban/:id',
+        },
+      },
+    },
   },
   collections: [Users, Media],
   editor: lexicalEditor(),
